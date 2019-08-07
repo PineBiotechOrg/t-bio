@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% import 'macros/masthead.html' as masthead %}
+
+{% block main %}
+  {{ masthead.render(data.page, { class: 'o-mb-0' }) }}
+
+  <div data-apos-ajax-context="blog">
+    {% include "indexAjax.html" %}
+  </div>
+{% endblock %}
+

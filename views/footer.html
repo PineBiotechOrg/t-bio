@@ -1,0 +1,13 @@
+{% import 'navigation.html' as navigation %}
+{% import 'macros/svgs.html' as svgs %}
+
+{% macro render(apos, home, currentPage, images) %}
+  <footer class="o-background-dark c-footer">
+    <div class="o-container c-footer__inner">
+      <div class="c-footer__nav">
+        {{ navigation.render(apos, home, currentPage, images) }}
+      </div>
+
+    </div>
+  </footer>
+{% endmacro %}

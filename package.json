@@ -1,0 +1,41 @@
+{
+  "name": "t-bio",
+  "version": "2.0.0",
+  "description": "Minimal Apostrophe Boilerplate",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "P'unk Avenue",
+  "license": "MIT",
+  "dependencies": {
+    "apostrophe": "^2.47.0",
+    "apostrophe-blog": "^2.2.1",
+    "apostrophe-favicons": "^1.1.5",
+    "apostrophe-forms": "^1.2.1",
+    "apostrophe-headless": "^2.9.1",
+    "apostrophe-open-graph": "^1.1.4",
+    "apostrophe-pieces-import": "^2.1.4",
+    "apostrophe-pieces-submit-widgets": "^2.0.4",
+    "apostrophe-seo": "^1.1.3",
+    "typy": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "verbose": true,
+    "ignore": [
+      "lib/modules/*/public/js/*.js",
+      "locales/*.json",
+      "public/modules/**/*.less",
+      "public/modules/**/*.js",
+      "public/uploads",
+      "public/apos-minified/*.js",
+      "public/css/master-*.less",
+      "data"
+    ],
+    "ext": "json, js, html, less"
+  }
+}

@@ -1,0 +1,6 @@
+{% import "apostrophe-schemas:macros.html" as schemas %}
+<form class="comments-form-widget" style="padding: 50px;" data-comments-form>
+    <h4>Leave a comment</h4>
+    {{ schemas.fields(data.schema , {tabs : false}) }}
+    <button type="submit" style="padding: 10px;">Submit</button>
+</form>
